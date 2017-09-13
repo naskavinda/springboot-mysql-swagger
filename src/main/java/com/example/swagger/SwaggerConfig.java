@@ -25,7 +25,7 @@ public class SwaggerConfig {
     @Bean
     public Docket postsApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("greenleaf-api")
+                .groupName("api")
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com.example.controller"))
                 .paths(postPaths())
@@ -36,7 +36,7 @@ public class SwaggerConfig {
     private Predicate<String> postPaths() {
 //        return or(regex("/.*")); // you can give permission to access all rest endpoints through the swagger UI.
         return or(regex("/book.*"),
-                regex("/property.*"));
+                regex("/publisher.*"));
     }
 
     private ApiInfo apiInfo() {
