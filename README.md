@@ -1,8 +1,17 @@
 # <b>Spring Boot Project with mysql db, JPA and swagger</b>
 
-## Configuration 
+## What's included
+This project is based on the Spring Boot
 
-MySQL database configuration is controlled by adding external configuration properties.This properties already added, but you have to change username and password. (springboot-mysql-swagger/src/main/resources/application.properties). 
+* Maven
+* Swagger 
+* Spring web
+* Spring Core - Lombok
+* Spring Data - Hibernate & MySQL
+
+## Configuration 
+Create a MySQL database with the name `library`. MySQL database configuration is controlled by adding external configuration properties. This properties already added, but you have to change username and password of /resources/application.properties.  
+(full path :- springboot-mysql-swagger/src/main/resources/application.properties). 
 
 `spring.jpa.hibernate.ddl-auto=update`  
 `spring.datasource.url=jdbc:mysql://localhost:3307/library`  
