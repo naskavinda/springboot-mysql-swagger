@@ -10,7 +10,7 @@ This project is based on the Spring Boot
 * Spring Data - Hibernate & MySQL
 
 ## Configuration 
-Create a MySQL database with the name `library`. MySQL database configuration is controlled by adding external configuration properties. These properties have already added, but you have to change the username and password of /resources/application.properties.  
+Create a MySQL database with the name `library`. MySQL database configuration is controlled by adding external configuration properties. These properties are already added, but you have to change the username and password of /resources/application.properties.  
 (full path :- springboot-mysql-swagger/src/main/resources/application.properties). 
 
 `spring.jpa.hibernate.ddl-auto=update`  
